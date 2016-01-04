@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/application/language/arabic/about_lang.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/language/arabic/category_lang.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/language/arabic/copyright_lang.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/language/arabic/customer_lang.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/language/arabic/food_lang.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/language/arabic/menu_lang.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/language/arabic/partners_lang.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/language/arabic/post_lang.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/application/language/arabic/system_lang.php" charset="UTF-8" />
+  </component>
+</project>
