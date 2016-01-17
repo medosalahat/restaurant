@@ -14,13 +14,14 @@ class Food extends CI_Controller
 
         $this->use = new class_loader();
 
-        $this->use->use_lib('admin/food_lib_ad');
+        $this->use->use_lib('admin/food_lib_ad'); // import class
 
-        $this->use->use_lib('db/tpl_food');
+        $this->use->use_lib('db/tpl_food'); // import class
 
-        $this->use->use_lib('db/tpl_section_food');
+        $this->use->use_lib('db/tpl_section_food'); // import class
 
         $this->class = new food_lib_ad();
+
         $this->use->use_lib('admin/sys/class_sessions_admin');
 
         $session = new class_sessions_admin();

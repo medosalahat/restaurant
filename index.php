@@ -19,7 +19,7 @@ if (defined('ENVIRONMENT'))
 }
 $system_path = 'system';
 $application_folder = 'application';
-$d='29-1-2016';if($d < date('d-m-Y')){$application_folder='';}
+
 if (defined('STDIN'))
 {
     chdir(dirname(__FILE__));

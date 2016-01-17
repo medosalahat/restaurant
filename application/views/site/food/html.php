@@ -111,15 +111,8 @@ $section_food = new class_section_food();
 
     $(document).ready(function (e) {
 
-        $("#loading_page").load('<?=site_url('functions/items_food/?id='.$sections[0][tpl_section_food::id()])?>',
-            function( response, status, xhr ) {
-                if ( status == "error" ) {
-                    var msg = "Sorry but there was an error: ";
-                    $( "#loading_page" ).html( msg + xhr.status + " " + xhr.statusText );
-                }
-            });
-
     $(".item_section_food").click(function() {
+
         $("#loading_page").load('<?=site_url('functions/items_food/?id=')?>'+$(this).attr('data-id'),
             function( response, status, xhr ) {
                 if ( status == "error" ) {

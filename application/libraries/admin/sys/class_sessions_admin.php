@@ -27,24 +27,6 @@ class class_sessions_admin
         return true;
     }
 
-    public function get_login_admin_in()
-    {
-
-        $data = $this->CI->session->userdata('login_admin');
-
-        if ($data==1) {
-
-            return true;
-        }
-
-        return false;
-    }
-
-    public function test(){
-
-        print_r($this->CI->session->userdata);
-    }
-
     public function remove_login_admin()
     {
 
@@ -76,5 +58,23 @@ class class_sessions_admin
 
        return $this->CI->session->userdata('id_user_admin');
 
+    }
+
+    public function get_login_admin_in()
+    {
+
+        $data = $this->CI->session->userdata('login_admin');
+
+        if ($data==1) {
+
+            return true;
+        }
+
+        return false;
+    }
+
+    public function test(){
+
+        print_r($this->CI->session->userdata);
     }
 }

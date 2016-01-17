@@ -1,4 +1,8 @@
-<?PHP $use = new class_loader(); $use->use_lib('db/tpl_user_site');$use->use_lib('system/bootstrap/class_massage');?>
+<?PHP
+$use = new class_loader();
+$use->use_lib('db/tpl_user_site');
+$use->use_lib('system/bootstrap/class_massage');
+?>
 <link href="<?= site_url('include/css/signin.css') ?>" rel="stylesheet">
 <style>
 

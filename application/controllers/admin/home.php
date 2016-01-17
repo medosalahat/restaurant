@@ -27,6 +27,7 @@ class Home extends CI_Controller {
             $page= new render_admin();
 
             $page->page_index();
+
         }else{
 
             $this->login();

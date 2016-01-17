@@ -5,6 +5,7 @@ $use->use_lib('site/food/class_food');
 $use->use_lib('site/food/class_image_food');
 $food = new class_food();
 $image_food = new class_image_food();
+
 ?>
 <section class="box-content box-4 box-style" id="portfolio">
     <div class="container">
@@ -18,8 +19,12 @@ $image_food = new class_image_food();
            <?PHP foreach($food->find_home_page() as $row): ?>
             <div class="col-sm-3">
                 <div class="portfolio-img">
+                    <?php $image = $image_food->find_Image($row[tpl_food::id()])?>
+                    <?PHP if(isset($image[0][tpl_image_food::path_image()]) && !empty($image[0][tpl_image_food::path_image()])){?>
+
+
                     <a href="#food_<?=$row[tpl_food::id()]?>" class="play-icon popup-with-zoom-anim">
-                        <?php $image = $image_food->find_Image($row[tpl_food::id()])?>
+
                         <img src="<?=site_url($image[0][tpl_image_food::path_image()])?>" alt="" /></a>
                     <div id="food_<?=$row[tpl_food::id()]?>" class="mfp-hide">
                         <div class="portfolio-items">
@@ -31,6 +36,7 @@ $image_food = new class_image_food();
                                   <input type="number" id="num_order_food_<?=$row[tpl_food::id()]?>" class=""/></p>
                         </div>
                     </div>
+                    <?PHP } ?>
                 </div>
             </div>
             <?PHP endforeach; ?>

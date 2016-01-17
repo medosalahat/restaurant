@@ -271,7 +271,7 @@ class class_customer
         $data = $db->get_where();
         $w = '';
         foreach ($data as $row) {
-            $w = $w . '<option value="' . $row[tpl_shipping_type::id()] . '">' . $row[tpl_shipping_type::name()] . '</option>';
+            $w = $w . '<option value="' . $row[tpl_shipping_type::id()] . '">' . $row[tpl_shipping_type::name()] .' - '.$row[tpl_shipping_type::price()]. '</option>';
         }
         return $w;
     }
